@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Form</title>
+</head>
+
+<link rel="stylesheet" href="style_copy.css">
+
+<body>
+    <button class="sidebar-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="sidebar" aria-label="Sidebar navigation">
+        <div class="sidebar-brand">Daily</div>
+        <a href="#water"><span class="nav-dot"></span>Water Intake</a>
+        <a href="#food"><span class="nav-dot"></span>Food Intake</a>
+        <a href="#medication"><span class="nav-dot"></span>Medication Intake</a>
+        <a href="#hobbies"><span class="nav-dot"></span>Hobbies</a>
+        <a href="#exercise"><span class="nav-dot"></span>Exercise</a>
+        <a href="#mood"><span class="nav-dot"></span>Mood</a>
+    </nav>
+
+    <div class="sidebar-overlay"></div>
+
+    <main>
+        <section id="home" class="hero-card">
+            <h1 class="header1">Daily Form</h1>
+            <p class="info">Welcome to the daily form! Please fill out the information below.</p>
+        </section>
+
+    <div class="card-grid">
+        <section id="water" class="daily-intake form-card">
+            <img class="card-image" src="water.png" alt="Water intake illustration">
+            <div class="card-content">
+                <h2 class="header2">Water Intake</h2>
+                <p class="card-description">How much water did you drink today?</p>
+
+                <div class="choice-group">
+                    <div class="choice-item">
+                        <input type="radio" id="water-1" name="water" value="1">
+                        <label for="water-1">Less than 1 glass</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="radio" id="water-2" name="water" value="2">
+                        <label for="water-2">2-3 glasses</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="radio" id="water-3" name="water" value="3">
+                        <label for="water-3">4+ glasses</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="food" class="daily-intake form-card">
+            <img class="card-image" src="food.png" alt="Food intake illustration">
+            <div class="card-content">
+                <h2 class="header2">Food Intake</h2>
+                <p class="card-description">Did you eat today?</p>
+
+                <div class="choice-group food">
+                    <div class="choice-item">
+                        <input type="checkbox" id="breakfast" name="breakfast" value="yes">
+                        <label for="breakfast">Breakfast</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="checkbox" id="lunch" name="lunch" value="yes">
+                        <label for="lunch">Lunch</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="checkbox" id="dinner" name="dinner" value="yes">
+                        <label for="dinner">Dinner</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="medication" class="form-card">
+            <img class="card-image" src="medication.png" alt="Medication illustration">
+            <div class="card-content">
+                <h2 class="header2">Medication Intake</h2>
+                <p class="card-description">Did you take these medications?</p>
+
+                <div class="choice-group">
+                    <div class="choice-item">
+                        <input type="checkbox" id="medication-1" name="medication-1" value="yes">
+                        <label for="medication-1">Lexapro</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="checkbox" id="medication-2" name="medication-2" value="yes">
+                        <label for="medication-2">Abilify</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="checkbox" id="medication-3" name="medication-3" value="yes">
+                        <label for="medication-3">Topamax</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="form-card">
+            <img class="card-image" src="hobbies.png" alt="Hobbies illustration">
+            <div class="card-content">
+                <h2 class="header2">Hobbies</h2>
+                <p class="card-description">What hobbies did you participate in?</p>
+
+                <div class="choice-group hobbies">
+                    <div class="choice-item">
+                        <input type="checkbox" id="hobby-1" name="hobby-1" value="yes">
+                        <label for="hobby-1">Reading</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="checkbox" id="hobby-2" name="hobby-2" value="yes">
+                        <label for="hobby-2">Exercise</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="checkbox" id="hobby-3" name="hobby-3" value="yes">
+                        <label for="hobby-3">Art</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="checkbox" id="hobby-4" name="hobby-4" value="yes">
+                        <label for="hobby-4">Music</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="checkbox" id="hobby-5" name="hobby-5" value="yes">
+                        <label for="hobby-5">Gaming</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="checkbox" id="hobby-6" name="hobby-6" value="yes">
+                        <label for="hobby-6">Cooking</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exercise" class="daily-intake form-card">
+            <img class="card-image" src="exercise.png" alt="Exercise illustration">
+            <div class="card-content">
+                <h2 class="header2">Exercise</h2>
+                <p class="card-description">How much exercise did you do today?</p>
+
+                <div class="choice-group">
+                    <div class="choice-item">
+                        <input type="radio" id="exercise-1" name="exercise" value="1">
+                        <label for="exercise-1">Less than 30 minutes</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="radio" id="exercise-2" name="exercise" value="2">
+                        <label for="exercise-2">30-60 minutes</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="radio" id="exercise-3" name="exercise" value="3">
+                        <label for="exercise-3">2+ hours</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mood" class="daily-intake form-card">
+            <img class="card-image" src="emotion.png" alt="Emotion illustration">
+            <div class="card-content">
+                <h2 class="header2">Mood</h2>
+                <p class="card-description">How are you feeling today?</p>
+
+                <div class="choice-group">
+                    <div class="choice-item">
+                        <input type="radio" id="mood-1" name="mood" value="1">
+                        <label for="mood-1">Good</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="radio" id="mood-2" name="mood" value="2">
+                        <label for="mood-2">Okay</label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="radio" id="mood-3" name="mood" value="3">
+                        <label for="mood-3">Bad</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="submit" class="submit-card">
+        <h2 class="header2">Submit Form</h2>
+        <p>Click the button below to submit your daily form.</p>
+        <a href="thank_you.html" class="button">Submit</a>
+
+        <section id="thank-you" class="thank-you-card hidden" aria-hidden="true">
+            <h3>Thank You!</h3>
+            <p>Thank you for filling out today's daily intake form. Have an amazing day!</p>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</main>
+
+</body>
+</html>
